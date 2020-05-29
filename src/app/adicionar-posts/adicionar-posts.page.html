@@ -12,19 +12,19 @@
   <form >
     <ion-item>
         <ion-label>UserId</ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-input [(ngModel)]="post.userId" name="userId" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Id</ion-label>
-      <ion-input type="number"></ion-input>
+      <ion-input [(ngModel)]="post.id" name="id" ype="number"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Title</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input [(ngModel)]="post.title" name="title" type="text"></ion-input>
 </ion-item>
     <ion-item>
         <ion-label>Body</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input [(ngModel)]="post.body" name="body" type="text"></ion-input>
     </ion-item>
   </form>
   <ion-grid fixed>
@@ -39,5 +39,5 @@
        </ion-button>
        </ion-col>
        </ion-row>
-       </ion-grid>
+       </ion-grid>      
 </ion-content>

@@ -1,3 +1,4 @@
+import { Posts } from './../models/posts.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adicionar-posts.page.scss'],
 })
 export class AdicionarPostsPage implements OnInit {
+
+  post = {} as Posts;
 
   constructor() { }
 

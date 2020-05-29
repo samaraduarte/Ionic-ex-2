@@ -16,13 +16,12 @@ export class PostsPage implements OnInit {
   private index = 0;
   private offset = 15;
 
-  valorBarra = false;
+  valorBarra = 0;
 
   constructor(private servicePost: PostsService, private toastController: ToastController) {
-    setTimeout(function(){
-      this.valorBarra = false;
-    }, 2000);
-    this.valorBarra = true;
+    setInterval(() => {
+      this.valorBarra += 0.03;
+    }, 500);
   }
 
 
